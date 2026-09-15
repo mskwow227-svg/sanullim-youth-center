@@ -188,17 +188,32 @@ button { font: inherit; }
 
 /* ---------- 히어로 ---------- */
 .hero {
-  background:
-    radial-gradient(60% 60% at 85% 0%, var(--pine-100), transparent 60%),
-    radial-gradient(50% 50% at 0% 100%, var(--sun-100), transparent 55%),
-    var(--paper);
+  position: relative;
+  overflow: hidden;
   padding: 3rem 0 2.5rem;
   text-align: center;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("../img/hero-building.jpg") 78% 58% / cover no-repeat;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(15,36,30,.32) 0%, rgba(15,36,30,.5) 45%, rgba(15,36,30,.74) 100%);
+}
+.hero > .container {
+  position: relative;
+  z-index: 1;
 }
 .hero__mascot {
   width: 120px;
   height: 120px;
   margin: 0 auto .5rem;
+  filter: drop-shadow(0 8px 18px rgba(0,0,0,.35));
 }
 .hero__badges {
   display: flex;
@@ -207,6 +222,7 @@ button { font: inherit; }
   gap: .5rem;
   margin-bottom: 1.1rem;
 }
+.hero__badges .chip { box-shadow: var(--shadow-md); }
 .chip {
   display: inline-flex;
   align-items: center;
@@ -222,14 +238,15 @@ button { font: inherit; }
 .hero__title {
   font-size: clamp(1.9rem, 6vw, 2.7rem);
   font-weight: 900;
-  color: var(--pine-700);
+  color: var(--white);
   letter-spacing: -.01em;
+  text-shadow: 0 2px 14px rgba(0,0,0,.35);
 }
 .hero__title small {
   display: block;
   font-size: .42em;
   font-weight: 700;
-  color: var(--ink-muted);
+  color: rgba(255,255,255,.88);
   margin-top: .5rem;
   letter-spacing: 0;
 }
@@ -237,7 +254,8 @@ button { font: inherit; }
   margin: 1rem auto 0;
   max-width: 34rem;
   font-size: 1.05rem;
-  color: var(--ink-soft);
+  color: rgba(255,255,255,.92);
+  text-shadow: 0 1px 8px rgba(0,0,0,.3);
 }
 .hero__actions {
   display: flex;
