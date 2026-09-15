@@ -260,22 +260,10 @@ button { font: inherit; }
 .hero__actions {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
   gap: .65rem;
   margin-top: 1.6rem;
-}
-.hero__social {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: .6rem;
-  margin-top: 1.4rem;
-}
-.hero__social span {
-  font-size: .8rem;
-  font-weight: 700;
-  color: rgba(255,255,255,.85);
-  margin-right: .2rem;
 }
 .hero__stats {
   display: grid;
