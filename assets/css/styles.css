@@ -264,6 +264,19 @@ button { font: inherit; }
   gap: .65rem;
   margin-top: 1.6rem;
 }
+.hero__social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .6rem;
+  margin-top: 1.4rem;
+}
+.hero__social span {
+  font-size: .8rem;
+  font-weight: 700;
+  color: rgba(255,255,255,.85);
+  margin-right: .2rem;
+}
 .hero__stats {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -522,18 +535,23 @@ button { font: inherit; }
 .footer-links { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem; }
 .footer-links a { text-decoration: underline; text-underline-offset: 2px; color: rgba(255,255,255,.82); }
 .footer-links a:hover { color: var(--white); }
-.footer-social { display: flex; gap: .5rem; margin-top: .85rem; }
-.footer-social a {
+.footer-social { display: flex; gap: .6rem; margin-top: .85rem; }
+
+/* ---------- SNS 버튼(공용) ---------- */
+.social-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 34px; height: 34px;
+  width: 40px; height: 40px;
   border-radius: 50%;
-  background: rgba(255,255,255,.12);
-  color: rgba(255,255,255,.9);
-  transition: background-color .15s ease;
+  color: var(--white);
+  box-shadow: var(--shadow-md);
+  transition: transform .15s ease, box-shadow .15s ease;
 }
-.footer-social a:hover { background: rgba(255,255,255,.24); }
+.social-btn:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); }
+.social-btn--instagram { background: linear-gradient(45deg, #f9ce34, #ee2a7b 60%, #6228d7); }
+.social-btn--facebook { background: #1877f2; }
+.social-btn--sm { width: 34px; height: 34px; }
 .footer-bottom {
   margin-top: 1.75rem;
   padding-top: 1.25rem;
