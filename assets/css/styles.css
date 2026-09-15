@@ -54,6 +54,8 @@ body {
   background: var(--paper);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 img { max-width: 100%; display: block; }
 a { color: inherit; }
@@ -192,6 +194,11 @@ button { font: inherit; }
     var(--paper);
   padding: 3rem 0 2.5rem;
   text-align: center;
+}
+.hero__mascot {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto .5rem;
 }
 .hero__badges {
   display: flex;
@@ -337,6 +344,7 @@ button { font: inherit; }
 .goal-grid__label { font-size: .85rem; font-weight: 700; color: var(--ink-soft); }
 
 .quote {
+  position: relative;
   max-width: 40rem;
   margin: 2rem auto 0;
   text-align: center;
@@ -344,6 +352,15 @@ button { font: inherit; }
   background: var(--white);
   border-radius: var(--radius-lg);
   border: 1px dashed var(--pine-200);
+}
+.quote__mascot {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 52px;
+  height: 52px;
+  filter: drop-shadow(0 4px 8px rgba(22, 48, 42, .18));
 }
 .quote p { font-size: 1.02rem; font-weight: 700; color: var(--pine-700); }
 .quote cite { display: block; margin-top: .6rem; font-size: .8rem; color: var(--ink-muted); font-style: normal; }
@@ -498,6 +515,7 @@ button { font: inherit; }
 /* ---------- 반응형 ---------- */
 @media (min-width: 640px) {
   .facility-grid { grid-template-columns: repeat(3, 1fr); }
+  .hero__mascot { width: 150px; height: 150px; }
 }
 @media (min-width: 760px) {
   .program-grid { grid-template-columns: repeat(3, 1fr); }

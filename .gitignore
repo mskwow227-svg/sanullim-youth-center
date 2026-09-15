@@ -12,3 +12,6 @@ desktop.ini
 # 로그 / 임시
 *.log
 node_modules/
+
+# 캐릭터 원본 자산(ai/pdf/zip) — 웹에 쓰는 파일만 assets/img 에 선별 복사, 원본은 저장소에 올리지 않음
+ref/
