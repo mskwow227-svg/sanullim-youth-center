@@ -21,6 +21,9 @@
     <meta name="twitter:title" content="산울림청소년센터 소개">
     <meta name="twitter:description" content="원미산 자락의 청소년 생태시민 성장 플랫폼, 산울림청소년센터를 소개합니다.">
 
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="stylesheet" as="style" crossorigin
+          href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 
     <script type="application/ld+json">
@@ -50,21 +53,106 @@
     <script defer src="assets/js/main.js"></script>
 </head>
 <body>
+    <svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <symbol id="icon-tree" viewBox="0 0 24 24">
+          <polygon points="12 2 6 9 18 9"/>
+          <polygon points="12 6 5 14 19 14"/>
+          <line x1="12" y1="14" x2="12" y2="21"/>
+        </symbol>
+        <symbol id="icon-phone" viewBox="0 0 24 24">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+        </symbol>
+        <symbol id="icon-pin" viewBox="0 0 24 24">
+          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+          <circle cx="12" cy="10" r="3"/>
+        </symbol>
+        <symbol id="icon-landmark" viewBox="0 0 24 24">
+          <polyline points="3 10 12 4 21 10"/>
+          <line x1="4" y1="10" x2="20" y2="10"/>
+          <line x1="6" y1="10" x2="6" y2="19"/>
+          <line x1="10" y1="10" x2="10" y2="19"/>
+          <line x1="14" y1="10" x2="14" y2="19"/>
+          <line x1="18" y1="10" x2="18" y2="19"/>
+          <line x1="4" y1="19" x2="20" y2="19"/>
+        </symbol>
+        <symbol id="icon-leaf" viewBox="0 0 24 24">
+          <path d="M6 20C6 11 11 5 20 4c0 9-5 14-14 16Z"/>
+          <path d="M8 18 19 5"/>
+        </symbol>
+        <symbol id="icon-users" viewBox="0 0 24 24">
+          <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+          <circle cx="9" cy="7" r="4"/>
+          <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+          <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+        </symbol>
+        <symbol id="icon-smile" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="10"/>
+          <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
+          <line x1="9" y1="9" x2="9.01" y2="9"/>
+          <line x1="15" y1="9" x2="15.01" y2="9"/>
+        </symbol>
+        <symbol id="icon-mountain" viewBox="0 0 24 24">
+          <polyline points="3 20 9 8 13 14 16 10 21 20"/>
+          <line x1="3" y1="20" x2="21" y2="20"/>
+        </symbol>
+        <symbol id="icon-book" viewBox="0 0 24 24">
+          <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+          <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+        </symbol>
+        <symbol id="icon-message" viewBox="0 0 24 24">
+          <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+        </symbol>
+        <symbol id="icon-award" viewBox="0 0 24 24">
+          <circle cx="12" cy="8" r="6"/>
+          <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/>
+        </symbol>
+        <symbol id="icon-globe" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="10"/>
+          <line x1="2" y1="12" x2="22" y2="12"/>
+          <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+        </symbol>
+        <symbol id="icon-door" viewBox="0 0 24 24">
+          <rect x="5" y="3" width="14" height="18" rx="1"/>
+          <line x1="9" y1="21" x2="15" y2="21"/>
+          <circle cx="15" cy="12" r="1"/>
+        </symbol>
+        <symbol id="icon-tent" viewBox="0 0 24 24">
+          <path d="M12 3 3 21h18z"/>
+          <line x1="12" y1="3" x2="12" y2="21"/>
+        </symbol>
+        <symbol id="icon-tool" viewBox="0 0 24 24">
+          <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94z"/>
+        </symbol>
+        <symbol id="icon-home" viewBox="0 0 24 24">
+          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+          <polyline points="9 22 9 12 15 12 15 22"/>
+        </symbol>
+        <symbol id="icon-coffee" viewBox="0 0 24 24">
+          <path d="M18 8h1a4 4 0 0 1 0 8h-1"/>
+          <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"/>
+          <line x1="6" y1="1" x2="6" y2="4"/>
+          <line x1="10" y1="1" x2="10" y2="4"/>
+          <line x1="14" y1="1" x2="14" y2="4"/>
+        </symbol>
+      </defs>
+    </svg>
+
     <a class="skip-link" href="#main">본문 바로가기</a>
 
     <!-- Header / Navigation -->
     <header class="site-header">
         <div class="site-header__inner">
             <a class="brand" href="#top">
-                <span class="brand__mark" aria-hidden="true">🌲</span>
+                <span class="brand__mark" aria-hidden="true"><svg class="icon icon-18"><use href="#icon-tree"/></svg></span>
                 <span>산울림청소년센터</span>
             </a>
             <div class="header-actions">
                 <a class="btn btn--ghost btn--sm" href="tel:032-344-4480">
-                    <span aria-hidden="true">📞</span><span class="btn-label--full">전화문의</span>
+                    <svg class="icon icon-16" aria-hidden="true"><use href="#icon-phone"/></svg><span class="btn-label--full">전화문의</span>
                 </a>
                 <a class="btn btn--primary btn--sm" href="#location">
-                    <span aria-hidden="true">📍</span><span>오시는 길</span>
+                    <svg class="icon icon-16" aria-hidden="true"><use href="#icon-pin"/></svg><span>오시는 길</span>
                 </a>
             </div>
         </div>
@@ -81,8 +169,8 @@
         <section id="top" class="hero">
             <div class="container">
                 <div class="hero__badges">
-                    <span class="chip">🏛️ 부천시 설립 · 부천여성청소년재단 운영</span>
-                    <span class="chip">🌲 원미산 자락 청소년활동시설</span>
+                    <span class="chip"><svg class="icon icon-16" aria-hidden="true"><use href="#icon-landmark"/></svg>부천시 설립 · 부천여성청소년재단 운영</span>
+                    <span class="chip"><svg class="icon icon-16" aria-hidden="true"><use href="#icon-tree"/></svg>원미산 자락 청소년활동시설</span>
                 </div>
                 <h1 class="hero__title">
                     산울림청소년센터
@@ -139,11 +227,12 @@
                     </div>
                 </div>
 
-                <ul class="goal-list">
-                    <li>시민으로 살아가기</li>
-                    <li>위기를 뛰어넘기</li>
-                    <li>미래를 주도하기</li>
-                    <li>변화를 이어가기</li>
+                <span class="mini-label">전략목표</span>
+                <ul class="goal-grid">
+                    <li><span class="goal-grid__num">01</span><span class="goal-grid__label">시민으로 살아가기</span></li>
+                    <li><span class="goal-grid__num">02</span><span class="goal-grid__label">위기를 뛰어넘기</span></li>
+                    <li><span class="goal-grid__num">03</span><span class="goal-grid__label">미래를 주도하기</span></li>
+                    <li><span class="goal-grid__num">04</span><span class="goal-grid__label">변화를 이어가기</span></li>
                 </ul>
 
                 <blockquote class="quote">
@@ -151,12 +240,13 @@
                     <cite>— 산울림청소년센터 인사말 중</cite>
                 </blockquote>
 
-                <div class="badge-row">
-                    <span class="chip">🏆 전국 청소년수련시설 종합평가 최우수 등급 다수 회 달성</span>
-                    <span class="chip">🌿 부천 지역환경교육센터 지정</span>
-                    <span class="chip">📘 청소년방과후아카데미 최우수 운영기관 선정</span>
-                    <span class="chip">🌍 유네스코 지속가능발전교육(ESD) 공식 프로젝트 인증</span>
-                </div>
+                <span class="mini-label">주요 인증 · 수상</span>
+                <ul class="cert-grid">
+                    <li><svg class="icon icon-20" aria-hidden="true"><use href="#icon-award"/></svg>전국 청소년수련시설 종합평가 최우수 등급 다수 회 달성</li>
+                    <li><svg class="icon icon-20" aria-hidden="true"><use href="#icon-leaf"/></svg>부천 지역환경교육센터 지정</li>
+                    <li><svg class="icon icon-20" aria-hidden="true"><use href="#icon-book"/></svg>청소년방과후아카데미 최우수 운영기관 선정</li>
+                    <li><svg class="icon icon-20" aria-hidden="true"><use href="#icon-globe"/></svg>유네스코 지속가능발전교육(ESD) 공식 프로젝트 인증</li>
+                </ul>
             </div>
         </section>
 
@@ -171,74 +261,45 @@
 
                 <div class="program-grid">
                     <article class="program-card">
-                        <div class="program-card__icon" aria-hidden="true">🙋</div>
+                        <div class="program-card__icon" aria-hidden="true"><svg class="icon icon-24"><use href="#icon-users"/></svg></div>
                         <h3 class="program-card__title">자치기구</h3>
                         <p class="program-card__desc">청소년이 센터 운영과 지역사회 활동에 직접 참여하고 목소리를 내는 자치활동입니다.</p>
-                        <div class="program-card__tags">
-                            <span>청소년운영위원회 Must Have</span>
-                            <span>청소년환경그리너</span>
-                            <span>산울림 청년크루</span>
-                            <span>청소년 동아리</span>
-                        </div>
+                        <p class="program-card__related"><strong>대표 프로그램</strong> 청소년운영위원회 Must Have · 청소년환경그리너 · 산울림 청년크루 · 청소년 동아리</p>
                     </article>
 
                     <article class="program-card">
-                        <div class="program-card__icon" aria-hidden="true">🎨</div>
+                        <div class="program-card__icon" aria-hidden="true"><svg class="icon icon-24"><use href="#icon-smile"/></svg></div>
                         <h3 class="program-card__title">참여활동</h3>
                         <p class="program-card__desc">지역 청소년과 시민을 위한 정기 여가문화 체험 프로그램을 운영합니다.</p>
-                        <div class="program-card__tags">
-                            <span>여가시민 문화채널</span>
-                            <span>청소년·성인 농구·난타</span>
-                            <span>지역 연계 체험활동</span>
-                        </div>
+                        <p class="program-card__related"><strong>대표 프로그램</strong> 여가시민 문화채널 · 청소년·성인 농구·난타 · 지역 연계 체험활동</p>
                     </article>
 
                     <article class="program-card">
-                        <div class="program-card__icon" aria-hidden="true">🌿</div>
+                        <div class="program-card__icon" aria-hidden="true"><svg class="icon icon-24"><use href="#icon-leaf"/></svg></div>
                         <h3 class="program-card__title">생태환경</h3>
                         <p class="program-card__desc">원미산 자락 입지를 살린 생태체험·환경교육 특성화사업입니다.</p>
-                        <div class="program-card__tags">
-                            <span>사계절 생태체험</span>
-                            <span>모두의 숲학교</span>
-                            <span>울림이네 가족텃밭</span>
-                            <span>숲속의 행복나눔축제</span>
-                        </div>
+                        <p class="program-card__related"><strong>대표 프로그램</strong> 사계절 생태체험 · 모두의 숲학교 · 울림이네 가족텃밭 · 숲속의 행복나눔축제</p>
                     </article>
 
                     <article class="program-card">
-                        <div class="program-card__icon" aria-hidden="true">🧗</div>
+                        <div class="program-card__icon" aria-hidden="true"><svg class="icon icon-24"><use href="#icon-mountain"/></svg></div>
                         <h3 class="program-card__title">모험활동</h3>
                         <p class="program-card__desc">숲밧줄·오리엔티어링·트레일런 등 산림레포츠로 신체·정신 건강 회복을 돕습니다.</p>
-                        <div class="program-card__tags">
-                            <span>녹색자금 지원사업</span>
-                            <span>도시숲 오리엔티어링</span>
-                            <span>로프 챌린지</span>
-                            <span>트레일런</span>
-                        </div>
+                        <p class="program-card__related"><strong>대표 프로그램</strong> 녹색자금 지원사업 · 도시숲 오리엔티어링 · 로프 챌린지 · 트레일런</p>
                     </article>
 
                     <article class="program-card">
-                        <div class="program-card__icon" aria-hidden="true">📚</div>
+                        <div class="program-card__icon" aria-hidden="true"><svg class="icon icon-24"><use href="#icon-book"/></svg></div>
                         <h3 class="program-card__title">방과후아카데미</h3>
                         <p class="program-card__desc">여성가족부·부천시가 지원하는 국가정책사업 '산울림 친구들'로 방과 후 학습과 체험을 지원합니다.</p>
-                        <div class="program-card__tags">
-                            <span>학습지원</span>
-                            <span>체험활동</span>
-                            <span>급식·상담</span>
-                            <span>캠프</span>
-                        </div>
+                        <p class="program-card__related"><strong>대표 프로그램</strong> 학습지원 · 체험활동 · 급식·상담 · 캠프</p>
                     </article>
 
                     <article class="program-card">
-                        <div class="program-card__icon" aria-hidden="true">💬</div>
+                        <div class="program-card__icon" aria-hidden="true"><svg class="icon icon-24"><use href="#icon-message"/></svg></div>
                         <h3 class="program-card__title">참여공간</h3>
                         <p class="program-card__desc">공지사항과 소식을 나누고 이용자의 의견을 듣는 소통 창구입니다.</p>
-                        <div class="program-card__tags">
-                            <span>공지사항</span>
-                            <span>포토갤러리</span>
-                            <span>프로그램 제안</span>
-                            <span>환불신청</span>
-                        </div>
+                        <p class="program-card__related"><strong>대표 프로그램</strong> 공지사항 · 포토갤러리 · 프로그램 제안 · 환불신청</p>
                     </article>
                 </div>
 
@@ -259,35 +320,68 @@
 
                 <div class="facility-grid">
                     <div class="facility-item">
-                        <div class="facility-item__name">반딧불이 소극장</div>
-                        <div class="facility-item__meta">1층 · 소공연장 · 최대 99명</div>
+                        <div class="facility-item__icon" aria-hidden="true"><svg class="icon icon-18"><use href="#icon-door"/></svg></div>
+                        <div>
+                            <div class="facility-item__name">반딧불이 소극장</div>
+                            <div class="facility-item__meta">1층 · 소공연장 · 최대 99명</div>
+                        </div>
                     </div>
                     <div class="facility-item">
-                        <div class="facility-item__name">맥놀이판</div>
-                        <div class="facility-item__meta">1층 · 실내체육관 · 최대 100명</div>
+                        <div class="facility-item__icon" aria-hidden="true"><svg class="icon icon-18"><use href="#icon-door"/></svg></div>
+                        <div>
+                            <div class="facility-item__name">맥놀이판</div>
+                            <div class="facility-item__meta">1층 · 실내체육관 · 최대 100명</div>
+                        </div>
                     </div>
                     <div class="facility-item">
-                        <div class="facility-item__name">다솔방 · 새뜻방</div>
-                        <div class="facility-item__meta">2층 · 강의실 · 최대 20명</div>
+                        <div class="facility-item__icon" aria-hidden="true"><svg class="icon icon-18"><use href="#icon-door"/></svg></div>
+                        <div>
+                            <div class="facility-item__name">다솔방 · 새뜻방</div>
+                            <div class="facility-item__meta">2층 · 강의실 · 최대 20명</div>
+                        </div>
                     </div>
                     <div class="facility-item">
-                        <div class="facility-item__name">포롱실</div>
-                        <div class="facility-item__meta">2층 · 강의실 · 최대 10명</div>
+                        <div class="facility-item__icon" aria-hidden="true"><svg class="icon icon-18"><use href="#icon-door"/></svg></div>
+                        <div>
+                            <div class="facility-item__name">포롱실</div>
+                            <div class="facility-item__meta">2층 · 강의실 · 최대 10명</div>
+                        </div>
                     </div>
                     <div class="facility-item">
-                        <div class="facility-item__name">모둠자리</div>
-                        <div class="facility-item__meta">원미산 탐방로 입구 · 야외무대</div>
+                        <div class="facility-item__icon" aria-hidden="true"><svg class="icon icon-18"><use href="#icon-leaf"/></svg></div>
+                        <div>
+                            <div class="facility-item__name">모둠자리</div>
+                            <div class="facility-item__meta">원미산 탐방로 입구 · 야외무대</div>
+                        </div>
                     </div>
                     <div class="facility-item">
-                        <div class="facility-item__name">소집단 야영장</div>
-                        <div class="facility-item__meta">센터 후문 · 일일체험활동</div>
+                        <div class="facility-item__icon" aria-hidden="true"><svg class="icon icon-18"><use href="#icon-tent"/></svg></div>
+                        <div>
+                            <div class="facility-item__name">소집단 야영장</div>
+                            <div class="facility-item__meta">센터 후문 · 일일체험활동</div>
+                        </div>
                     </div>
-                </div>
-
-                <div class="facility-extra">
-                    <span class="chip">🛠️ 에코 메이커 스페이스 '반디마루'</span>
-                    <span class="chip">🏠 청소년문화공간 속닥속닥</span>
-                    <span class="chip">🍚 구내식당</span>
+                    <div class="facility-item">
+                        <div class="facility-item__icon" aria-hidden="true"><svg class="icon icon-18"><use href="#icon-tool"/></svg></div>
+                        <div>
+                            <div class="facility-item__name">에코 메이커 스페이스 '반디마루'</div>
+                            <div class="facility-item__meta">특화공간</div>
+                        </div>
+                    </div>
+                    <div class="facility-item">
+                        <div class="facility-item__icon" aria-hidden="true"><svg class="icon icon-18"><use href="#icon-home"/></svg></div>
+                        <div>
+                            <div class="facility-item__name">청소년문화공간 속닥속닥</div>
+                            <div class="facility-item__meta">특화공간</div>
+                        </div>
+                    </div>
+                    <div class="facility-item">
+                        <div class="facility-item__icon" aria-hidden="true"><svg class="icon icon-18"><use href="#icon-coffee"/></svg></div>
+                        <div>
+                            <div class="facility-item__name">구내식당</div>
+                            <div class="facility-item__meta">특화공간</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -302,7 +396,7 @@
 
                 <div class="location-single">
                     <div class="info-card">
-                        <h3 class="info-card__title">📍 주소 · 연락처</h3>
+                        <h3 class="info-card__title"><svg class="icon icon-18" aria-hidden="true"><use href="#icon-pin"/></svg>주소 · 연락처</h3>
                         <dl>
                             <div class="info-row">
                                 <dt>주소</dt>
