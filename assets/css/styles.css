@@ -265,6 +265,7 @@ button { font: inherit; }
   color: var(--ink-soft);
   text-align: center;
 }
+.about-lead p + p { margin-top: .85rem; }
 .mv-grid {
   display: grid;
   gap: 1rem;
@@ -368,16 +369,6 @@ button { font: inherit; }
 .section__footnote a { color: var(--sky-600); font-weight: 700; text-decoration: underline; text-underline-offset: 2px; }
 
 /* ---------- 시설안내 ---------- */
-.facility-summary {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: .75rem;
-  max-width: 34rem;
-  margin: 0 auto 2rem;
-}
-.facility-summary .stat { text-align: center; }
-.facility-summary .stat__num { font-size: 1.05rem; }
-
 .facility-grid {
   display: grid;
   gap: .85rem;
@@ -401,10 +392,9 @@ button { font: inherit; }
 }
 
 /* ---------- 오시는 길 ---------- */
-.location-grid {
-  display: grid;
-  gap: 1.25rem;
-  grid-template-columns: 1fr;
+.location-single {
+  max-width: 32rem;
+  margin: 0 auto;
 }
 .info-card {
   background: var(--white);
@@ -422,7 +412,6 @@ button { font: inherit; }
   gap: .4rem;
   margin-bottom: .6rem;
 }
-.info-card__title::before { content: ""; }
 .info-row {
   display: flex;
   gap: .5rem;
@@ -433,10 +422,6 @@ button { font: inherit; }
 .info-row:first-of-type { border-top: none; padding-top: 0; }
 .info-row dt { flex: none; width: 4.4rem; font-weight: 700; color: var(--ink-muted); }
 .info-row dd { margin: 0; color: var(--ink-soft); }
-
-.transit-list { display: flex; flex-direction: column; gap: .7rem; }
-.transit-item { font-size: .86rem; color: var(--ink-soft); }
-.transit-item strong { color: var(--ink); display: block; font-size: .84rem; margin-bottom: .2rem; }
 
 .map-actions { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: 1rem; }
 
@@ -468,7 +453,6 @@ button { font: inherit; }
 /* ---------- 반응형 ---------- */
 @media (min-width: 640px) {
   .facility-grid { grid-template-columns: repeat(3, 1fr); }
-  .location-grid { grid-template-columns: 1.1fr .9fr; }
 }
 @media (min-width: 760px) {
   .program-grid { grid-template-columns: repeat(3, 1fr); }
@@ -476,7 +460,6 @@ button { font: inherit; }
 @media (max-width: 480px) {
   .mv-grid { grid-template-columns: 1fr; }
   .program-grid { grid-template-columns: 1fr; }
-  .facility-summary { grid-template-columns: repeat(3, 1fr); }
   .header-actions .btn span.btn-label--full { display: none; }
 }
 
