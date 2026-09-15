@@ -519,9 +519,21 @@ button { font: inherit; }
   justify-content: space-between;
   gap: 1.5rem;
 }
-.footer-links { display: flex; flex-wrap: wrap; gap: 1rem; }
+.footer-links { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem; }
 .footer-links a { text-decoration: underline; text-underline-offset: 2px; color: rgba(255,255,255,.82); }
 .footer-links a:hover { color: var(--white); }
+.footer-social { display: flex; gap: .5rem; margin-top: .85rem; }
+.footer-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px; height: 34px;
+  border-radius: 50%;
+  background: rgba(255,255,255,.12);
+  color: rgba(255,255,255,.9);
+  transition: background-color .15s ease;
+}
+.footer-social a:hover { background: rgba(255,255,255,.24); }
 .footer-bottom {
   margin-top: 1.75rem;
   padding-top: 1.25rem;
